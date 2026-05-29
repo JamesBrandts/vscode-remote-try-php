@@ -11,7 +11,10 @@
 		</form>
 		<?php
 		$name = htmlspecialchars($_POST['name']);
-		echo "Hello $name!";
+		if(!empty($name))
+			echo "Nome não foi preenchido.";
+		else
+			echo $name;
 		?>
 	</body>
 </html>
