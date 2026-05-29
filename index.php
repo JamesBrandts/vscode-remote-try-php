@@ -12,7 +12,7 @@
 		<?php
 		$name = htmlspecialchars($_POST['name']);
 		if(!empty($name))
-			echo "Nome não foi preenchido.";
+			echo "Nome não foi preenchido";
 		else
 			echo $name;
 		?>
